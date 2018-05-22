@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Mininet">
+   <children>
+      <VBox layoutX="58.0" layoutY="45.0">
+         <children>
+            <Button layoutX="91.0" layoutY="120.0" mnemonicParsing="false" onAction="#FindConSource" text="Source person">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="18.0" />
+               </font>
+            </Button>
+            <ListView fx:id="Find_Con_Source" layoutX="91.0" layoutY="158.0" onMouseClicked="#FindConSList" prefHeight="300.0" prefWidth="300.0" />
+         </children>
+      </VBox>
+      <VBox layoutX="647.0" layoutY="45.0">
+         <children>
+            <Button layoutX="688.0" layoutY="124.0" mnemonicParsing="false" onAction="#FindConTarget" text="Target person">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="18.0" />
+               </font>
+            </Button>
+            <ListView fx:id="Find_Con_Target" layoutX="680.0" layoutY="158.0" onMouseClicked="#FindConTList" prefHeight="300.0" prefWidth="300.0" />
+         </children>
+      </VBox>
+      <Button layoutX="439.0" layoutY="198.0" mnemonicParsing="false" onAction="#FindOutDir" text="Find out relation">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="Find_Con_Message" editable="false" layoutX="358.0" layoutY="689.0" prefHeight="50.0" prefWidth="300.0" visible="false" />
+      <VBox fx:id="ConChainVBox" disable="true" layoutX="647.0" layoutY="440.0">
+         <children>
+            <Label layoutX="647.0" layoutY="446.0" text="Connection chain">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <ListView fx:id="Con_Chain_TF" layoutX="647.0" layoutY="476.0" prefHeight="200.0" prefWidth="300.0" />
+         </children>
+      </VBox>
+      <Button layoutX="797.0" layoutY="707.0" mnemonicParsing="false" onAction="#FindConBackButton" text="Back to menu">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="ConChainButton" disable="true" layoutX="412.0" layoutY="537.0" mnemonicParsing="false" onAction="#FindOutChain" text="Find out connection chain">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Button>
+      <VBox layoutX="58.0" layoutY="440.0">
+         <children>
+            <Label layoutX="108.0" layoutY="466.0" text="Direct Relationship">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Dir_Relat_TF" layoutX="67.0" layoutY="498.0" prefHeight="200.0" prefWidth="300.0" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

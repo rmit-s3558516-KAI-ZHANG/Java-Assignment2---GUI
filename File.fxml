@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Mininet">
+   <children>
+      <SplitPane dividerPositions="0.1" layoutX="247.0" layoutY="225.0" orientation="VERTICAL" prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="358.0" layoutY="21.0" prefHeight="57.0" prefWidth="798.0" text="File" textFill="#e4107a" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="Times New Roman Bold Italic" size="36.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="833.0" layoutY="39.0" mnemonicParsing="false" onAction="#FileBackButton" text="Back to menu" AnchorPane.bottomAnchor="12.0" AnchorPane.rightAnchor="62.0">
+                     <font>
+                        <Font name="Times New Roman Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <VBox alignment="CENTER" layoutX="107.0" layoutY="234.0" spacing="100.0" AnchorPane.bottomAnchor="207.0" AnchorPane.leftAnchor="107.0" AnchorPane.topAnchor="234.0">
+                     <children>
+                        <Button layoutX="87.0" layoutY="53.0" mnemonicParsing="false" onAction="#UploadToFile" text="Upload to file" textFill="#04651e">
+                           <font>
+                              <Font name="Times New Roman Bold Italic" size="24.0" />
+                           </font>
+                        </Button>
+                        <TextField fx:id="FileMessage" editable="false" layoutX="71.0" layoutY="148.0" prefHeight="254.0" prefWidth="200.0" visible="false" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" layoutX="491.0" layoutY="44.0" spacing="30.0" AnchorPane.rightAnchor="117.0" AnchorPane.topAnchor="44.0">
+                     <children>
+                        <Button layoutX="483.0" layoutY="59.0" mnemonicParsing="false" onAction="#DisplayPersonButton" text="View personal information from file" textFill="#b529b3">
+                           <font>
+                              <Font name="Times New Roman Bold Italic" size="24.0" />
+                           </font>
+                        </Button>
+                        <ListView fx:id="FileView" layoutX="366.0" layoutY="118.0" prefHeight="200.0" prefWidth="300.0" />
+                     </children>
+                  </VBox>
+                  <VBox layoutX="532.0" layoutY="371.0" spacing="30.0" AnchorPane.bottomAnchor="70.0" AnchorPane.rightAnchor="158.0">
+                     <children>
+                        <Button layoutX="549.0" layoutY="388.0" mnemonicParsing="false" onAction="#DisplayReButton" text="View relationships from file" textFill="#b529b3">
+                           <font>
+                              <Font name="Times New Roman Bold Italic" size="24.0" />
+                           </font>
+                        </Button>
+                        <ListView fx:id="FileReView" layoutX="575.0" layoutY="432.0" prefHeight="200.0" prefWidth="300.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

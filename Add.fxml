@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Mininet">
+   <children>
+      <SplitPane dividerPositions="0.1" orientation="VERTICAL" prefHeight="800.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="239.0" layoutY="19.0" prefHeight="77.0" prefWidth="998.0" text="Please fill in personal information" textAlignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="Times New Roman Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Button layoutX="832.0" layoutY="641.0" mnemonicParsing="false" onAction="#AddBackButton" text="Back to menu" textFill="#171717">
+                     <font>
+                        <Font name="Times New Roman Bold" size="18.0" />
+                     </font></Button>
+                  <VBox layoutX="169.0" layoutY="69.0">
+                     <children>
+                        <Label layoutX="254.0" layoutY="53.0" text="Name">
+                           <font>
+                              <Font name="Times New Roman Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="name_txt" layoutX="210.0" layoutY="74.0" prefHeight="50.0" prefWidth="200.0" promptText="Full name" />
+                        <TextArea fx:id="t_n" editable="false" layoutX="179.0" layoutY="97.0" prefHeight="50.0" prefWidth="200.0" visible="false" />
+                     </children>
+                  </VBox>
+                  <VBox layoutX="169.0" layoutY="230.0">
+                     <children>
+                        <Label layoutX="254.0" layoutY="53.0" text="Gender">
+                           <font>
+                              <Font name="Times New Roman Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="gender_txt" layoutX="210.0" layoutY="74.0" prefHeight="50.0" prefWidth="200.0" promptText="M or F">
+                           <font>
+                              <Font name="Times New Roman" size="12.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="169.0" layoutY="440.0">
+                     <children>
+                        <Label layoutX="254.0" layoutY="53.0" text="Status">
+                           <font>
+                              <Font name="Times New Roman Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="status_txt" layoutX="210.0" layoutY="74.0" prefHeight="50.0" prefWidth="200.0" promptText="Career and work place" />
+                     </children>
+                  </VBox>
+                  <VBox layoutX="632.0" layoutY="69.0">
+                     <children>
+                        <Label layoutX="254.0" layoutY="53.0" text="Profile_image">
+                           <font>
+                              <Font name="Times New Roman Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="image_txt" layoutX="210.0" layoutY="74.0" prefHeight="50.0" prefWidth="200.0" promptText="Image path" />
+                     </children>
+                  </VBox>
+                  <VBox layoutX="632.0" layoutY="230.0">
+                     <children>
+                        <Label layoutX="254.0" layoutY="53.0" text="Age">
+                           <font>
+                              <Font name="Times New Roman Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="age_txt" layoutX="210.0" layoutY="74.0" prefHeight="50.0" prefWidth="200.0" promptText="Age number">
+                           <font>
+                              <Font name="Times New Roman" size="12.0" />
+                           </font>
+                        </TextField>
+                        <TextArea fx:id="t_a" editable="false" layoutX="179.0" layoutY="97.0" prefHeight="50.0" prefWidth="200.0" visible="false" />
+                     </children>
+                  </VBox>
+                  <VBox layoutX="632.0" layoutY="440.0">
+                     <children>
+                        <Label layoutX="254.0" layoutY="53.0" text="State">
+                           <font>
+                              <Font name="Times New Roman Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="state_txt" layoutX="210.0" layoutY="74.0" prefHeight="50.0" prefWidth="200.0" promptText="ACT, NSW, NT, QLD, SA, TAS, VIC and WA.">
+                           <font>
+                              <Font name="Times New Roman" size="12.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </VBox>
+                  <HBox layoutX="113.0" layoutY="641.0" spacing="40.0" AnchorPane.bottomAnchor="42.0" AnchorPane.leftAnchor="113.0">
+                     <children>
+                        <Button layoutX="92.0" layoutY="641.0" mnemonicParsing="false" onAction="#add_person" text="Confirm">
+                           <font>
+                              <Font name="Times New Roman Bold" size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="extraAddBT" disable="true" layoutX="228.0" layoutY="641.0" mnemonicParsing="false" onAction="#addParentButton" text="Add parent" visible="false">
+                           <font>
+                              <Font name="Times New Roman Bold" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

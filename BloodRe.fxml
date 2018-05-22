@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Mininet">
+   <children>
+      <VBox alignment="CENTER_LEFT" layoutX="250.0" layoutY="64.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="64.0">
+         <children>
+            <Button layoutX="374.0" layoutY="64.0" mnemonicParsing="false" onAction="#selectBLPButton" text="Please select a person">
+               <font>
+                  <Font name="Times New Roman Bold" size="24.0" />
+               </font>
+            </Button>
+            <ListView fx:id="FBRlv" layoutX="250.0" layoutY="121.0" onMouseClicked="#selectedBRlv" prefHeight="300.0" prefWidth="500.0" />
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="250.0" layoutY="506.0" spacing="5.0" AnchorPane.bottomAnchor="160.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="250.0">
+         <children>
+            <Label layoutX="435.0" layoutY="501.0" text="Blood relationship">
+               <font>
+                  <Font name="Times New Roman Bold" size="24.0" />
+               </font>
+            </Label>
+            <ListView fx:id="BRListView" layoutX="250.0" layoutY="538.0" prefHeight="100.0" prefWidth="500.0" />
+         </children>
+      </VBox>
+      <Button fx:id="FindBLBackButton" layoutX="804.0" layoutY="704.0" mnemonicParsing="false" onAction="#BloodBackButton" text="Back to menu" AnchorPane.bottomAnchor="64.0" AnchorPane.rightAnchor="65.0">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

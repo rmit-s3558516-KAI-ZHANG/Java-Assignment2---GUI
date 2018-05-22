@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Mininet">
+   <children>
+      <SplitPane dividerPositions="0.1" orientation="VERTICAL" prefHeight="800.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="306.0" layoutY="31.0" prefHeight="77.0" prefWidth="998.0" text="Please fill the parent information" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="Times New Roman Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="887.0" layoutY="39.0" mnemonicParsing="false" onAction="#AddParentBackButton" text="Back">
+                     <font>
+                        <Font name="Times New Roman Bold" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <VBox layoutX="56.0" layoutY="14.0">
+                     <children>
+                        <Label layoutX="56.0" layoutY="14.0" text="One parent name">
+                           <font>
+                              <Font name="Times New Roman Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="onePName" layoutX="56.0" layoutY="34.0" prefHeight="25.0" prefWidth="200.0" promptText="Full name" />
+                     </children>
+                  </VBox>
+                  <VBox layoutX="56.0" layoutY="193.0" prefHeight="70.0" prefWidth="200.0" AnchorPane.bottomAnchor="452.0" AnchorPane.leftAnchor="56.0" AnchorPane.rightAnchor="742.0" AnchorPane.topAnchor="193.0">
+                     <children>
+                        <Label layoutX="254.0" layoutY="53.0" text="One parent profile image">
+                           <font>
+                              <Font name="Times New Roman Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="onePImage" layoutX="210.0" layoutY="74.0" prefHeight="50.0" prefWidth="200.0" promptText="Image path" />
+                     </children>
+                  </VBox>
+                  <VBox layoutX="56.0" layoutY="358.0" prefHeight="70.0" prefWidth="200.0" AnchorPane.bottomAnchor="287.0" AnchorPane.leftAnchor="56.0" AnchorPane.rightAnchor="742.0" AnchorPane.topAnchor="358.0">
+                     <children>
+                        <Label layoutX="254.0" layoutY="53.0" text="One parent status">
+                           <font>
+                              <Font name="Times New Roman Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="onePStatus" layoutX="210.0" layoutY="74.0" prefHeight="50.0" prefWidth="200.0" promptText="Career and work place" />
+                     </children>
+                  </VBox>
+                  <VBox layoutX="56.0" layoutY="525.0" prefHeight="70.0" prefWidth="200.0" AnchorPane.bottomAnchor="120.0" AnchorPane.leftAnchor="56.0" AnchorPane.rightAnchor="742.0" AnchorPane.topAnchor="525.0">
+                     <children>
+                        <Label layoutX="254.0" layoutY="53.0" text="One parent gender">
+                           <font>
+                              <Font name="Times New Roman Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="onePGender" layoutX="210.0" layoutY="74.0" prefHeight="50.0" prefWidth="200.0" promptText="M or F" />
+                     </children>
+                  </VBox>
+                  <VBox layoutX="399.0" layoutY="14.0" AnchorPane.bottomAnchor="631.0" AnchorPane.leftAnchor="399.0" AnchorPane.rightAnchor="399.0" AnchorPane.topAnchor="14.0">
+                     <children>
+                        <Label layoutX="399.0" layoutY="14.0" text="One parent age">
+                           <font>
+                              <Font name="Times New Roman Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="onePAge" layoutX="399.0" layoutY="34.0" prefHeight="50.0" prefWidth="200.0" promptText="Age number" />
+                     </children>
+                  </VBox>
+                  <VBox layoutX="399.0" layoutY="358.0" prefHeight="70.0" prefWidth="200.0" AnchorPane.bottomAnchor="287.0" AnchorPane.leftAnchor="399.0" AnchorPane.rightAnchor="399.0" AnchorPane.topAnchor="358.0">
+                     <children>
+                        <Label layoutX="254.0" layoutY="53.0" text="Another parent name">
+                           <font>
+                              <Font name="Times New Roman Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="anoPName" layoutX="210.0" layoutY="74.0" prefHeight="50.0" prefWidth="200.0" promptText="Full name" />
+                     </children>
+                  </VBox>
+                  <VBox layoutX="386.0" layoutY="525.0" prefHeight="70.0" prefWidth="226.0" AnchorPane.bottomAnchor="120.0" AnchorPane.leftAnchor="386.0" AnchorPane.rightAnchor="386.0" AnchorPane.topAnchor="525.0">
+                     <children>
+                        <Label layoutX="254.0" layoutY="53.0" text="Another parent profile image">
+                           <font>
+                              <Font name="Times New Roman Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="anoPImage" layoutX="210.0" layoutY="74.0" prefHeight="50.0" prefWidth="200.0" promptText="Image path" />
+                     </children>
+                  </VBox>
+                  <VBox layoutX="759.0" layoutY="14.0" prefHeight="70.0" prefWidth="200.0" AnchorPane.bottomAnchor="631.0" AnchorPane.leftAnchor="759.0" AnchorPane.rightAnchor="39.0" AnchorPane.topAnchor="14.0">
+                     <children>
+                        <Label layoutX="254.0" layoutY="53.0" text="Another parent status">
+                           <font>
+                              <Font name="Times New Roman Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="anoPStatus" layoutX="210.0" layoutY="74.0" prefHeight="50.0" prefWidth="200.0" promptText="Career and work place" />
+                     </children>
+                  </VBox>
+                  <VBox layoutX="759.0" layoutY="193.0" prefHeight="70.0" prefWidth="200.0" AnchorPane.bottomAnchor="452.0" AnchorPane.leftAnchor="759.0" AnchorPane.rightAnchor="39.0" AnchorPane.topAnchor="193.0">
+                     <children>
+                        <Label layoutX="254.0" layoutY="53.0" text="Another parent gender">
+                           <font>
+                              <Font name="Times New Roman Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="anoPGender" layoutX="210.0" layoutY="74.0" prefHeight="50.0" prefWidth="200.0" promptText="M or F" />
+                     </children>
+                  </VBox>
+                  <VBox layoutX="759.0" layoutY="358.0" prefHeight="70.0" prefWidth="200.0" AnchorPane.bottomAnchor="287.0" AnchorPane.leftAnchor="759.0" AnchorPane.rightAnchor="39.0" AnchorPane.topAnchor="358.0">
+                     <children>
+                        <Label layoutX="254.0" layoutY="53.0" text="Another parent age">
+                           <font>
+                              <Font name="Times New Roman Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="anoPAge" layoutX="210.0" layoutY="74.0" prefHeight="50.0" prefWidth="200.0" promptText="Age number" />
+                     </children>
+                  </VBox>
+                  <VBox layoutX="759.0" layoutY="525.0" prefHeight="70.0" prefWidth="200.0" AnchorPane.bottomAnchor="120.0" AnchorPane.leftAnchor="759.0" AnchorPane.rightAnchor="39.0" AnchorPane.topAnchor="525.0">
+                     <children>
+                        <Label layoutX="254.0" layoutY="53.0" text="Another parent state">
+                           <font>
+                              <Font name="Times New Roman Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="anoPState" layoutX="210.0" layoutY="74.0" prefHeight="50.0" prefWidth="200.0" promptText="ACT, NSW, NT, QLD, SA, TAS, VIC and WA." />
+                     </children>
+                  </VBox>
+                  <VBox layoutX="399.0" layoutY="193.0" AnchorPane.bottomAnchor="452.0" AnchorPane.leftAnchor="399.0" AnchorPane.rightAnchor="399.0" AnchorPane.topAnchor="193.0">
+                     <children>
+                        <Label layoutX="399.0" layoutY="193.0" text="One parent state">
+                           <font>
+                              <Font name="Times New Roman Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="onePState" layoutX="399.0" layoutY="213.0" prefHeight="50.0" prefWidth="200.0" promptText="ACT, NSW, NT, QLD, SA, TAS, VIC and WA." />
+                     </children>
+                  </VBox>
+                  <Button alignment="CENTER" layoutX="454.0" layoutY="669.0" mnemonicParsing="false" onAction="#addChildParent" text="Confirm" textAlignment="CENTER" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="454.0">
+                     <font>
+                        <Font name="Times New Roman Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <TextArea fx:id="EMessage" editable="false" layoutX="246.0" layoutY="612.0" prefHeight="32.0" prefWidth="506.0" visible="false" AnchorPane.bottomAnchor="71.0" AnchorPane.leftAnchor="246.0" AnchorPane.rightAnchor="246.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Mininet">
+   <children>
+      <SplitPane dividerPositions="0.2" layoutX="420.0" layoutY="200.0" orientation="VERTICAL" prefHeight="800.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="404.0" layoutY="19.0" prefHeight="157.0" prefWidth="841.0" text="Person Information" textFill="#0d0d0d" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="Times New Roman Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <Button alignment="CENTER" layoutX="841.0" layoutY="110.0" mnemonicParsing="false" onAction="#ListBackButton" text="Back to menu" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <SplitPane dividerPositions="0.1" layoutX="322.0" layoutY="95.0" orientation="VERTICAL" prefHeight="635.0" prefWidth="998.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="60.0" prefWidth="996.0" spacing="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <Label alignment="CENTER" layoutX="49.0" layoutY="14.0" text="Name" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+                                       <font>
+                                          <Font name="Times New Roman Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" layoutX="178.0" layoutY="14.0" text="Profile image" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+                                       <font>
+                                          <Font name="Times New Roman Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" layoutX="388.0" layoutY="14.0" text="Status" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+                                       <font>
+                                          <Font name="Times New Roman Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" layoutX="499.0" layoutY="14.0" text="Gender" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+                                       <font>
+                                          <Font name="Times New Roman Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" layoutX="647.0" layoutY="14.0" text="Age" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+                                       <font>
+                                          <Font name="Times New Roman Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" layoutX="806.0" layoutY="14.0" text="State" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+                                       <font>
+                                          <Font name="Times New Roman Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <ListView fx:id="livi" layoutX="-7.0" prefHeight="567.0" prefWidth="996.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-7.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="0.0" />
+                              <Button fx:id="displayButton" alignment="CENTER" layoutX="346.0" layoutY="172.0" mnemonicParsing="false" onAction="#showPerson" prefHeight="112.0" prefWidth="305.0" text="Display" textAlignment="CENTER" AnchorPane.bottomAnchor="283.0" AnchorPane.leftAnchor="346.0" AnchorPane.rightAnchor="345.0" AnchorPane.topAnchor="172.0">
+                                 <font>
+                                    <Font name="Times New Roman Bold" size="48.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

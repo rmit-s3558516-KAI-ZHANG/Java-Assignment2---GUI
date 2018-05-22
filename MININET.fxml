@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Mininet">
+   <children>
+      <SplitPane dividerPositions="0.1" orientation="VERTICAL" prefHeight="800.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="80.0" layoutY="2.0" prefHeight="77.0" prefWidth="998.0" text="MiniNet 2.0" textFill="#9816bf" textOverrun="CENTER_ELLIPSIS" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="Times New Roman Bold Italic" size="36.0" />
+                     </font>
+                  </Label>
+                  <HBox layoutX="733.0" layoutY="39.0" spacing="20.0" AnchorPane.bottomAnchor="12.0" AnchorPane.rightAnchor="14.0">
+                     <children>
+                        <Button layoutX="673.0" layoutY="37.0" mnemonicParsing="false" onAction="#GuideButton" text="Guide" textAlignment="CENTER">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="790.0" layoutY="37.0" mnemonicParsing="false" onAction="#FileButton" text="File" textAlignment="CENTER">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="914.0" layoutY="37.0" mnemonicParsing="false" onAction="#DBButton" text="DataBase" textAlignment="CENTER" textFill="#030303">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+               <effect>
+                  <InnerShadow color="#d01111" />
+               </effect>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="699.0" prefWidth="998.0">
+               <children>
+                  <Button alignment="CENTER" contentDisplay="CENTER" layoutY="415.0" mnemonicParsing="false" onAction="#FindBlRe" prefHeight="100.0" prefWidth="1000.0" text="Find out blood relationship" textAlignment="CENTER" textFill="#0f21c3" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Times New Roman Bold Italic" size="36.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="AddPersonBt" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#AddPersonButton" prefHeight="105.0" prefWidth="1000.0" text="Add a person" textAlignment="CENTER" textFill="#0f21c3" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Times New Roman Bold Italic" size="36.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="CENTER" contentDisplay="CENTER" layoutY="515.0" mnemonicParsing="false" onAction="#FindCon" prefHeight="100.0" prefWidth="1000.0" text="Find out connection" textAlignment="CENTER" textFill="#0f21c3" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Times New Roman Bold Italic" size="36.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="ExitBt" alignment="CENTER" contentDisplay="CENTER" layoutY="615.0" mnemonicParsing="false" onAction="#Exit" prefHeight="100.0" prefWidth="1000.0" text="Exit" textAlignment="CENTER" textFill="#0f21c3" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Times New Roman Bold Italic" size="36.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="CENTER" contentDisplay="CENTER" layoutY="105.0" mnemonicParsing="false" onAction="#SelectPersonButton" prefHeight="105.0" prefWidth="1000.0" text="Select one person" textAlignment="CENTER" textFill="#0f21c3" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Times New Roman Bold Italic" size="36.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="CENTER" contentDisplay="CENTER" layoutY="210.0" mnemonicParsing="false" onAction="#ListPersonInfo" prefHeight="105.0" prefWidth="1000.0" text="List all persons" textAlignment="CENTER" textFill="#0f21c3" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Times New Roman Bold Italic" size="36.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="CENTER" contentDisplay="CENTER" layoutY="315.0" mnemonicParsing="false" onAction="#ConectTwoPerson" prefHeight="100.0" prefWidth="1000.0" text="Connect two persons" textAlignment="CENTER" textFill="#0f21c3" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Times New Roman Bold Italic" size="36.0" />
+                     </font>
+                  </Button>
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Mininet">
+   <children>
+      <SplitPane dividerPositions="0.1" layoutX="230.0" layoutY="108.0" orientation="VERTICAL" prefHeight="800.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="459.0" layoutY="31.0" prefHeight="77.0" prefWidth="998.0" text="Connect two persons" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="Times New Roman Bold Italic" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <VBox layoutX="55.0" layoutY="69.0">
+                     <children>
+                        <Button layoutX="91.0" layoutY="120.0" mnemonicParsing="false" onAction="#connectOnePerson" text="Select one person">
+                           <font>
+                              <Font name="Times New Roman Bold Italic" size="18.0" />
+                           </font>
+                        </Button>
+                        <ListView fx:id="connect_one_lv" layoutX="91.0" layoutY="158.0" onMouseClicked="#selectedConnect1LV" prefHeight="300.0" prefWidth="300.0" />
+                     </children>
+                  </VBox>
+                  <VBox layoutX="646.0" layoutY="69.0">
+                     <children>
+                        <Button layoutX="688.0" layoutY="124.0" mnemonicParsing="false" onAction="#connectAnoPerson" text="Select another person">
+                           <font>
+                              <Font name="Times New Roman Bold Italic" size="18.0" />
+                           </font>
+                        </Button>
+                        <ListView fx:id="connect_two_lv" layoutX="680.0" layoutY="158.0" onMouseClicked="#selectedConnect2LV" prefHeight="300.0" prefWidth="300.0" />
+                     </children>
+                  </VBox>
+                  <TextField fx:id="ConnectMessage" alignment="CENTER" editable="false" layoutX="249.0" layoutY="489.0" prefHeight="100.0" prefWidth="500.0" visible="false" />
+                  <MenuButton layoutX="443.0" layoutY="219.0" mnemonicParsing="false" text="Connect">
+                    <items>
+                      <MenuItem fx:id="connect_friends" mnemonicParsing="false" onAction="#ConnectFriendsButton" text="friends" />
+                      <MenuItem fx:id="connect_couple" mnemonicParsing="false" onAction="#ConnectCoupleButton" text="couple" />
+                        <MenuItem fx:id="connect_parent" mnemonicParsing="false" onAction="#ConnectParentButton" text="parent" />
+                        <MenuItem fx:id="connect_colleague" mnemonicParsing="false" onAction="#ConnectColleagueButton" text="colleague" />
+                        <MenuItem fx:id="connect_classmate" mnemonicParsing="false" onAction="#ConnectClassmateButton" text="classmate" />
+                    </items>
+                     <font>
+                        <Font name="Times New Roman Bold" size="18.0" />
+                     </font>
+                  </MenuButton>
+                  <Button layoutX="819.0" layoutY="625.0" mnemonicParsing="false" onAction="#ConnectBackButton" text="Back to menu">
+                     <font>
+                        <Font name="Times New Roman Bold Italic" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
