@@ -56,6 +56,13 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import org.hsqldb.Server;
 
+/**
+ * main class
+ * concluding main method
+ * all of GUI design in this class
+ * @author Kai Zhang
+ *
+ */
 public class Mininet extends Application implements WriteAndReadTextFile {
 
     private File file1 = new File("src/TextFile/people.txt");
@@ -83,11 +90,11 @@ public class Mininet extends Application implements WriteAndReadTextFile {
                                     // created by judge_Person method.
     private String n; // when user enter the person information, it is used for
                       // recording the input name.
-    private String i;
-    private String s;
-    private String sta;
-    private String g;
-    private int a;
+    private String i; // recording person image
+    private String s; // recording person status
+    private String sta; // recording person state
+    private String g; // recording person gender
+    private int a; // recording person age
     protected static Server hsqlServer = null;
     protected static Connection con = null;
     protected static ResultSet rs = null;
